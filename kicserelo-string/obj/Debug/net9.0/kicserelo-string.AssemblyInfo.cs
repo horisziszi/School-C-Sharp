@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("kicserelo-string")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47e999fc975acf04d71c14a540173605a49e2519")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae23e26f404ff3f1dd8f44c655db86e58e60ac36")]
 [assembly: System.Reflection.AssemblyProductAttribute("kicserelo-string")]
 [assembly: System.Reflection.AssemblyTitleAttribute("kicserelo-string")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
