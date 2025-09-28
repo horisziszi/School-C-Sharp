@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "string-fuggveny", "string-f
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szoszamlalo", "szoszamlalo\szoszamlalo.csproj", "{2B2DF15A-AEAD-4EE9-AB03-B4884FE6C249}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fuggveny-magyarazas", "fuggveny-magyarazas\fuggveny-magyarazas.csproj", "{57D0261B-D5F3-4E2A-A036-3549644EB864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lista-magyarazas", "lista-magyarazas\lista-magyarazas.csproj", "{0500CC0D-D252-485F-8938-0BE74603CCEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +82,13 @@ Global
 		{2B2DF15A-AEAD-4EE9-AB03-B4884FE6C249}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B2DF15A-AEAD-4EE9-AB03-B4884FE6C249}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B2DF15A-AEAD-4EE9-AB03-B4884FE6C249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57D0261B-D5F3-4E2A-A036-3549644EB864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D0261B-D5F3-4E2A-A036-3549644EB864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D0261B-D5F3-4E2A-A036-3549644EB864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D0261B-D5F3-4E2A-A036-3549644EB864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0500CC0D-D252-485F-8938-0BE74603CCEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0500CC0D-D252-485F-8938-0BE74603CCEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0500CC0D-D252-485F-8938-0BE74603CCEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0500CC0D-D252-485F-8938-0BE74603CCEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
