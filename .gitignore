@@ -1,7 +1,9 @@
 ## Unified .gitignore for .NET projects (VS Code friendly)
 ## Based on Dotnet.gitignore + minimal VS Code version
 
-# Build results
+# Build results (any depth)
+**/[Bb]in/
+**/[Oo]bj/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -12,8 +14,6 @@ x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
-[Bb]in/
-[Oo]bj/
 [Ll]og/
 [Ll]ogs/
 
