@@ -10,7 +10,7 @@ class Program
         hossz = rnd.Next(1,40);
         for (i = 0; i < hossz; i++)
         {
-            a = rnd.Next(1, 100);
+            a = rnd.Next(1, 51);
             e.Add(a);
         }
 
@@ -39,6 +39,7 @@ class Program
     static void Main(string[] args)
     {
         Console.Clear();
+        int i;
         int Index;
         rnd = new Random();
         List<int> ermek = Ermek();
@@ -47,7 +48,7 @@ class Program
         Console.WriteLine("Az érmék száma: " + ermek.Count);
         Console.WriteLine("A legnagyobb érme: " + ermek.Max());
 
-        for (int i = 0; i < 3; i++)
+        for (i = 0; i < 3; i++)
         {
             Index = rnd.Next(0, ermek.Count);
             ermek.Insert(Index, 22);
@@ -59,8 +60,31 @@ class Program
         egyedi.Sort();
         egyedi.Reverse();
         Kiir(egyedi, false);
-        
 
+        Console.WriteLine();
+
+        StreamReader fajl = new StreamReader("kulonleges.txt");
+        string s;
+        string[] reszek;
+        List<int> kulonleges = new List<int>();
+        while ((s = fajl.ReadLine()) != null)
+        {
+            reszek = s.Split(' ');
+            for (i = 0; i < reszek.Length; i++)
+            {
+                kulonleges.Add(Convert.ToInt32(reszek[i]));
+            }
+        }
+        Kiir(kulonleges, false);
+
+        for (i = 0; i < kulonleges.Count; i++)
+        {
+
+        }
+
+        int a = kulonleges.Count(k => ermek.Contains(k));
+        
+        Console.WriteLine("A keresett számok száma: " + a);
 
     }
 }
