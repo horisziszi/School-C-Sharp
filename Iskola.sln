@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lista-magyarazas", "lista-m
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "virag", "virag\virag.csproj", "{5C96B639-ADCB-4217-BE31-11A3E812CFF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fajlbololvasas-teszt", "fajlbololvasas-teszt\fajlbololvasas-teszt.csproj", "{D2F8E7EF-D7F4-47E1-B107-B81F68C4F32F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,5 +98,9 @@ Global
 		{5C96B639-ADCB-4217-BE31-11A3E812CFF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C96B639-ADCB-4217-BE31-11A3E812CFF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C96B639-ADCB-4217-BE31-11A3E812CFF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2F8E7EF-D7F4-47E1-B107-B81F68C4F32F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F8E7EF-D7F4-47E1-B107-B81F68C4F32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F8E7EF-D7F4-47E1-B107-B81F68C4F32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F8E7EF-D7F4-47E1-B107-B81F68C4F32F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

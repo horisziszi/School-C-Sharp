@@ -1,0 +1,5 @@
+sárga 2
+piros 8
+zöld 5
+kék 3
+fehér 10
