@@ -77,11 +77,7 @@ class Program
         }
         Kiir(kulonleges, false);
 
-        for (i = 0; i < kulonleges.Count; i++)
-        {
-
-        }
-
+        
         int a = kulonleges.Count(k => ermek.Contains(k));
         
         Console.WriteLine("A keresett számok száma: " + a);
