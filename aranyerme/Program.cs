@@ -63,7 +63,7 @@ class Program
 
         Console.WriteLine();
 
-        StreamReader fajl = new StreamReader("kulonleges.txt");
+        StreamReader fajl = new StreamReader("kulonleges.txt"); // a .csproj-ban hozzáadtam a kulonleges.txt-t
         string s;
         string[] reszek;
         List<int> kulonleges = new List<int>();
@@ -75,12 +75,29 @@ class Program
                 kulonleges.Add(Convert.ToInt32(reszek[i]));
             }
         }
-        Kiir(kulonleges, false);
+        Console.WriteLine("A különleges érmek listája: ");
+        Kiir(kulonleges);
 
-        
-        int a = kulonleges.Count(k => ermek.Contains(k));
-        
-        Console.WriteLine("A keresett számok száma: " + a);
+        Console.WriteLine();
+
+        Console.WriteLine("Eredeti lista: ");
+        Kiir(ermek);
+
+        Console.WriteLine();
+
+        int db;
+        for (i = 0; i < kulonleges.Count; i++)
+        {
+            db = 0;
+            for (int j = 0; j < ermek.Count; j++)
+            {
+                if (kulonleges[i] == ermek[j])
+                {
+                    db++;
+                }
+            }
+            Console.WriteLine(kulonleges[i] + " - " + db);
+        }
 
     }
 }
