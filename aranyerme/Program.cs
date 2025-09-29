@@ -59,6 +59,7 @@ class Program
         egyedi.Sort();
         egyedi.Reverse();
         Kiir(egyedi, false);
+        
 
 
     }

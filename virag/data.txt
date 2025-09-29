@@ -1,0 +1,5 @@
+fehér 10
+sárga 30
+piros 8
+kék 15
+lila 12
