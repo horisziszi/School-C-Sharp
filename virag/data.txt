@@ -1,5 +1,6 @@
-fehér 10
-sárga 30
+5
+fehér 1
+sárga 3
 piros 8
-kék 15
-lila 12
+kék 5
+lila 2
