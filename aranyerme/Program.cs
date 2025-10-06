@@ -44,6 +44,8 @@ class Program
         rnd = new Random();
         List<int> ermek = Ermek();
         List<int> egyedi = ermek.Distinct().ToList();
+        List<int> paros = new List<int>();
+        List<int> rendezett = new List<int>();
         Kiir(ermek);
         Console.WriteLine("Az érmék száma: " + ermek.Count);
         Console.WriteLine("A legnagyobb érme: " + ermek.Max());
@@ -97,8 +99,23 @@ class Program
                 }
             }
             Console.WriteLine(kulonleges[i] + " - " + db);
-        }
 
+            // 10.06
+            int darab;
+
+            darab = ermek.Count(x => x > 20); // 20-nel nagyobb elemek száma
+
+            double atlag;
+
+            atlag = ermek.Average(); // érmék átlaga
+            atlag = Math.Round(atlag, 2); // 2 tizedesjegy
+
+            darab = ermek.Count(x => x > atlag); // átlagnál nagyobb elemek száma
+
+            paros = ermek.FindAll(x => x % 2 == 0); // páros elemek 
+
+            rendezett = ermek.OrderBy(x => x).ToList(); // rendezett lista
+        }
     }
 }
 
