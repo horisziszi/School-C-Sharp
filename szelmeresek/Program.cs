@@ -1,4 +1,6 @@
-﻿namespace szelmeresek;
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace szelmeresek;
 
 class Program
 {
@@ -33,7 +35,21 @@ class Program
         adatok.TrimExcess();              // Lista méretének optimalizálása
         return adatok;                    // Lista visszaadása
     }
+    static bool Atvalt(int pk, out int ora, out int perc)
+    {
+        bool sikeres = false;
+        ora = 0;
+        perc = 0;
 
+        if (pk >= 0)
+        {
+            ora = pk / 60;
+            perc = pk % 60;
+            sikeres = true;
+        }
+
+        return sikeres;
+    }
     // Kiírja a lista tartalmát a konzolra
     static void Kiiro(List<Adat> a)
     {
@@ -45,6 +61,17 @@ class Program
         Console.WriteLine();  // Üres sor a végén
     }
 
+    static void Kiirato(List<Adat> a)
+    {
+        int ora, perc, i;
+        for (i = 0; i < a.Count; i++)
+        {
+            Atvalt(a[i].ido, out ora, out perc);
+            Console.WriteLine(ora + ":" + perc + " " + a[i].erosseg + "km/h " + a[i].irany);
+        }
+        Console.WriteLine();
+    }
+
     // A program fő része
     static void Main(string[] args)
     {
@@ -54,6 +81,28 @@ class Program
         // Adatok kiírása a képernyőre
         Kiiro(meresek);
 
+        Console.WriteLine("Legnagyobb szélsebesség: " + meresek.Max(x => x.erosseg));
+
+        // erős szél = (>30)
+        Console.WriteLine("Hányszor mértek erős szelet: " + meresek.Count(x => x.erosseg > 30));
+
+        int max = 0;
+        bool van = false;
+        van = meresek.Exists(x => x.irany == "É");
+        if (van)
+        {
+            max = meresek.Where(x => x.irany == "É").Max(x => x.erosseg);
+        }
+        van = false;
+        Console.WriteLine("Legerősebb északi szél: " + max);
+
+        int del = meresek.IndexOf(meresek.Where(x => x.irany == "DNY").First());
+        Console.WriteLine("Első délnyugati mérés helye: " + del);
+
+        List<string> iranyok = meresek.Select(x => x.irany).Distinct().ToList();
+
+        Kiirato(meresek);
+        
         // Várakozás billentyűleütésre
         Console.ReadKey();
     }
