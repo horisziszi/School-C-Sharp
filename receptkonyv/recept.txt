@@ -1,0 +1,25 @@
+Mandragóra gyökér;2;8.5;1
+Tündérpor;1;15.0;2
+Ezüstpor;4;80.0;1
+Sárkánypikkely;3;12.5;3
+Fekete mák;4;6.0;1
+Sellőhaj;2;20.0;4
+Tündérméz;1;9.0;4
+Trollköröm;5;9.0;3
+Holdvirág szirom;1;4.0;2
+Ezüsttövis;3;14.5;5
+Békaepe;2;7.0;1
+Vérfagyöngy;1;11.0;5
+Borostyán levél;2;1.0;2
+Kígyónyelv;3;8.0;4
+Nyálkagomba;2;2.1;2
+Pókfonál;5;9.5;5
+Tündérméz;2;18.0;3
+Sárgakvarc por;1;4.5;1
+Holdvirág szirom;3;12.0;4
+Fekete só;2;7.5;2
+Trollnyál;4;10.0;3
+Ezüstpor;1;22.0;5
+Párducszem;2;17.0;4
+Bagolytoll;3;5.5;1
+Napfény csepp;2;16.5;2
