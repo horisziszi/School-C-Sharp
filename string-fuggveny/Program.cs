@@ -21,13 +21,6 @@ class Program
         }
 
 
-
-
-
-
-
-
-
         return jelszo;
     }
     static void Main(string[] args)
