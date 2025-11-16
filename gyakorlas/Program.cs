@@ -29,7 +29,16 @@ class Program
 
 
 
-        
+        int k = 10;
+
+        for (int i = 0; i < 100; i++)
+        {
+            int a = i * (i - 1) / 2;
+
+        }
+
+        // Console.WriteLine(a); // ha egy cikluson belül történik egy változó létrehozása, nem lehet a cikluson kívül használni
+        Console.WriteLine(k);
 
         Console.ReadKey();
     }
