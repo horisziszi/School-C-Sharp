@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tantargyfelosztas", "tantar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cellov", "cellov\cellov.csproj", "{58B2C9CA-54A8-4381-BDF6-BF4564242B33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "meterolog", "meterolog\meterolog.csproj", "{F1D965A8-5D8E-4BB2-BA17-8274888378D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -162,5 +164,9 @@ Global
 		{58B2C9CA-54A8-4381-BDF6-BF4564242B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58B2C9CA-54A8-4381-BDF6-BF4564242B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58B2C9CA-54A8-4381-BDF6-BF4564242B33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1D965A8-5D8E-4BB2-BA17-8274888378D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1D965A8-5D8E-4BB2-BA17-8274888378D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1D965A8-5D8E-4BB2-BA17-8274888378D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1D965A8-5D8E-4BB2-BA17-8274888378D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
