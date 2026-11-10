@@ -125,6 +125,19 @@ class Banyato
 
         // 6. Feladat
 
+        Console.Write($"\n6. Feladat \n A vizsgált szelvény oszlopának azonosítója: ");
+        int oazonosito = Convert.ToInt32(Console.ReadLine());
+
+        StreamWriter ki = new StreamWriter("diagram.txt");
+        for (i = 0; i < sorok; i++)
+        {
+            string sorazonosito = (i + 1).ToString().PadLeft(2, '0');
+            int csillagokSzama = (int)Math.Round((double)meres[i, oazonosito - 1]/10);
+            string csillagok = new string('*', csillagokSzama);
+            ki.WriteLine($"{sorazonosito} {csillagok}");
+        }
+        ki.Close();
+
 
 
 
